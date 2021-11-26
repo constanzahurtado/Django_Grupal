@@ -1,0 +1,10 @@
+{% extends 'TeloVendoApp/layout.html' %}
+{% block content %}
+
+    {% for cliente in data %}
+    <div>
+        <h1>{{cliente.rut}} {{cliente.nombre}} {{cliente.apellido}} {{cliente.email}} {{cliente.edad}}</h1>
+    </div>
+    {% endfor %}
+{% endblock %}
+
